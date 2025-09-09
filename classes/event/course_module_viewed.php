@@ -7,9 +7,7 @@ class course_module_viewed extends \core\event\course_module_viewed {
 
     protected function init() {
         $this->data['objectid'] = $this->context->instanceid;
-        // --- LÍNEA AÑADIDA ---
-        $this->data['objecttable'] = 'zoomwindow'; // Asegúrate que 'zoomwindow' es el nombre exacto de tu módulo
-        // --- FIN DE LA LÍNEA ---
+        $this->data['objecttable'] = 'zoomwindow';
         $this->data['crud'] = 'r';
         $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
