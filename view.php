@@ -59,5 +59,5 @@ $PAGE->set_heading(format_string($course->fullname));
 $PAGE->set_context($modulecontext);
 
 echo $OUTPUT->header();
-
+echo '<iframe src="http://localhost:8000" style="width: 100%; height: 70vh; border: none;"></iframe>';
 echo $OUTPUT->footer();
